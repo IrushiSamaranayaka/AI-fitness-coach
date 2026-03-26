@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Fitness Coach</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Fitness Coach</h1>
+<p class="subtitle">Your Personal Smart Trainer</p>
+
+<div class="form-card">
+
+<label>Your Name</label>
+<input type="text" id="name">
+
+<label>Fitness Goal</label>
+<select id="goal">
+<option value="lose">Lose Weight</option>
+<option value="muscle">Gain Muscle</option>
+<option value="fit">Stay Fit</option>
+</select>
+
+<label>Experience Level</label>
+<select id="level">
+<option value="beginner">Beginner</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+</select>
+
+<label>Workout Days per Week</label>
+<select id="days">
+<option value="3">3 Days</option>
+<option value="4">4 Days</option>
+<option value="5">5 Days</option>
+</select>
+
+<label>Weight (kg)</label>
+<input type="number" id="weight" placeholder="Enter your weight">
+
+<label>Height (cm)</label>
+<input type="number" id="height" placeholder="Enter your height">
+
+<button onclick="generatePlan()">Generate Plan</button>
+
+</div>
+
+<div id="result" class="result-box"></div>
+<button id="downloadBtn" onclick="downloadPlan()">Download Plan</button>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
